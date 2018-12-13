@@ -1,0 +1,53 @@
+intents:
+  - greet
+  - farewell
+  - thank_you
+  - weather_check
+
+entities:
+  - name
+  - place
+  - weather
+
+slots:
+  name:
+    type: text
+  place:
+    type: text
+  weather:
+    type: text
+
+templates:
+  utter_greet:
+    - "Hi there!" # {name} is a slot
+    - "Hello my friend!"
+    - "Hola amigo!"
+  utter_farewell:
+    - "Goodbye!"
+    - "Bye Bye!"
+    - "Farewell amigo!"
+    - "See you soon"
+  utter_bot_info:
+    - "I am Tembo, a friendly weather bot!"
+  utter_thank_you:
+    - "Thank you!"
+    - "Thank you very much!"
+    - "Thanks!"
+  utter_accept_thanks:
+    - "Pleasure is all mine"
+    - "My pleasure"
+    - "You're welcome"
+    - "Don't mention it"
+  utter_ask_location:
+    - "Which place?"
+    - "Can you tell me the exact place?"
+    - "Which place you want to know about?"
+
+actions:
+  - utter_greet
+  - utter_farewell
+  - utter_bot_info
+  - utter_thank_you
+  - utter_accept_thanks
+  - utter_ask_location
+  - check_weather_info
