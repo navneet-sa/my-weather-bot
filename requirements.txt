@@ -1,4 +1,4 @@
 rasa-nlu
 rasa-core==0.12.2
 tensorboard==1.11.0
-tensorflow==1.15.0
+tensorflow==2.5.3
